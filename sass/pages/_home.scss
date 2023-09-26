@@ -12,13 +12,23 @@
   }
 
   &__image--full {
+    display: none;
+
     @include respond(tablet-portrait) {
+      display: inline;
       margin-bottom: 7.2rem;
     }
 
     @include respond(mobile) {
-      // width: 41.4rem;
-      // height: 15.3rem;
+      margin-bottom: 4.8rem;
+      width: 41.4rem;
+      height: 15.3rem;
+    }
+  }
+
+  &__image--left {
+    @include respond(tablet-portrait) {
+      display: none;
     }
   }
 
