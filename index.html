@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Meet landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img class="header__logo" src="/assets/logo.svg" alt="Logo" />
+      </div>
+      <div class="hero">
+        <picture class="hero__image--full">
+          <source
+            srcset="/assets/tablet/image-hero.png"
+            media="(max-width: 1360px)"
+          />
+          <img
+            class="hero__image--left"
+            src="/assets/desktop/image-hero-left.png"
+            alt="Image Hero Left"
+          />
+        </picture>
+        <div class="hero__text-content">
+          <h1 class="heading-primary hero__heading">Group Chat for Everyone</h1>
+          <p class="hero__body">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero__buttons">
+            <a class="btn btn--turquoise hero__button--download" href="#">
+              Download <span>v1.3</span>
+            </a>
+            <a class="btn btn--purple" href="#"> What is it? </a>
+          </div>
+        </div>
+        <img
+          class="hero__image--right"
+          src="/assets/desktop/image-hero-right.png"
+          alt="Image Hero Right"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="section-features">
+        <div class="pendulum section-features__pendulum">
+          <div class="pendulum__vertical-line"></div>
+          <div class="pendulum__ball">
+            <span>01</span>
+          </div>
+        </div>
+        <div class="gallery">
+          <img
+            src="/assets/desktop/image-woman-in-videocall.jpg"
+            alt="Woman in Videocall Image"
+            class="gallery__image gallery__image--1"
+          />
+          <img
+            src="/assets/desktop/image-women-videochatting.jpg"
+            alt="Women Videochatting Image"
+            class="gallery__image gallery__image--2"
+          />
+          <img
+            src="/assets/desktop/image-men-in-meeting.jpg"
+            alt="Men in Meeting Image"
+            class="gallery__image gallery__image--3"
+          />
+          <img
+            src="/assets/desktop/image-man-texting.jpg"
+            alt="Man Texting Image"
+            class="gallery__image gallery__image--4"
+          />
+        </div>
+        <div class="section-features__text-content">
+          <p class="overline section-features__overline">
+            Built for modern use
+          </p>
+          <h2 class="heading-secondary section-features__heading">
+            Smarter meetings, all in one place
+          </h2>
+          <p class="section-features__body">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="pendulum footer__pendulum">
+        <div class="pendulum__vertical-line"></div>
+        <div class="pendulum__ball">
+          <span>02</span>
+        </div>
+      </div>
+      <div class="footer__overlay"></div>
+      <div class="footer__content">
+        <h2 class="footer__heading heading-secondary">
+          Experience more together
+        </h2>
+        <p class="footer__body">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <a href="#" class="footer__download btn btn--purple">
+          Download <span>v1.3</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

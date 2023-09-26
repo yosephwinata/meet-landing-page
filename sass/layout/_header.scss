@@ -1,0 +1,18 @@
+.header {
+  &__logo-box {
+    width: 11.9rem;
+    margin: 8rem auto 10.8rem;
+
+    @include respond(tablet-portrait) {
+      margin: 4.8rem auto 6.4rem;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 5.4rem;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+}

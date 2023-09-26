@@ -1,0 +1,27 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 592px: Phone
+592 - 1360px: Tablet portrait
+
+$breakpoint arguement choices:
+- mobile
+- tablet-portrait
+
+My workflow order: base > components > layout > pages
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    //592px
+    @media only screen and (max-width: 37em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-portrait {
+    //1360px
+    @media only screen and (max-width: 85em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 31.4rem;
+  margin-bottom: 8rem;
+
+  @include respond(tablet-portrait) {
+    gap: 1.1rem;
+    margin-top: 28.7rem;
+    margin-bottom: 4.8rem;
+  }
+
+  @include respond(mobile) {
+    gap: 2.5rem;
+    margin-top: 26.8rem;
+    margin-bottom: 6.4rem;
+  }
+
+  &__image {
+    width: 25.5rem;
+    border-radius: 8px;
+
+    @include respond(tablet-portrait) {
+      width: 16.4rem;
+    }
+
+    @include respond(mobile) {
+      width: 15.1rem;
+    }
+  }
+}

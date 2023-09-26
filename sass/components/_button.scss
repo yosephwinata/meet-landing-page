@@ -1,0 +1,36 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    font-weight: $weight-black;
+    padding: 1.6rem 4rem;
+    border-radius: 29px;
+    transition: all 0.3s;
+  }
+
+  &--turquoise {
+    &:link,
+    &:visited {
+      background-color: $color-turquoise-dark;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-turquoise-medium;
+    }
+  }
+
+  &--purple {
+    &:link,
+    &:visited {
+      background-color: $color-purple-dark;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-purple-medium;
+    }
+  }
+}

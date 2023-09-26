@@ -1,0 +1,157 @@
+.hero {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @include respond(tablet-portrait) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__image--full {
+    @include respond(tablet-portrait) {
+      margin-bottom: 7.2rem;
+    }
+
+    @include respond(mobile) {
+      // width: 41.4rem;
+      // height: 15.3rem;
+    }
+  }
+
+  &__image--right {
+    @include respond(tablet-portrait) {
+      display: none;
+    }
+  }
+
+  &__text-content {
+    width: 54rem;
+    min-width: 54rem;
+    margin-left: 8.8rem;
+    margin-right: 8.8rem;
+
+    @include respond(tablet-portrait) {
+      width: auto;
+      min-width: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__heading {
+    width: 44.5rem;
+    color: $color-black;
+    margin: 0 auto 3.4rem;
+
+    @include respond(tablet-portrait) {
+      width: 33.9rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include respond(mobile) {
+      width: 29rem;
+    }
+  }
+
+  &__body {
+    width: 54rem;
+    color: $color-gray;
+    margin: 0 auto 3.2rem;
+
+    @include respond(tablet-portrait) {
+      width: 45.7rem;
+    }
+
+    @include respond(mobile) {
+      width: 32.7rem;
+    }
+  }
+
+  &__buttons {
+    @include respond(mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+    }
+  }
+
+  &__button--download {
+    margin-right: 1.6rem;
+    display: inline-block;
+
+    @include respond(mobile) {
+      margin-right: 0;
+      // display: flex;
+      // flex-direction: column;
+    }
+
+    span {
+      color: $color-turquoise-light;
+    }
+  }
+}
+
+.section-features {
+  position: relative;
+
+  &__pendulum {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -12rem);
+
+    @include respond(tablet-portrait) {
+      transform: translate(-50%, -12.3rem);
+    }
+  }
+
+  &__text-content {
+    text-align: center;
+    margin-bottom: 18.4rem;
+
+    @include respond(tablet-portrait) {
+      margin-bottom: 19.2rem;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 17.6rem;
+    }
+  }
+
+  &__overline {
+    margin-bottom: 1.6rem;
+    color: $color-turquoise-dark;
+
+    @include respond(mobile) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__heading {
+    width: 44.5rem;
+    color: $color-black;
+    margin: 0 auto 3.2rem auto;
+
+    @include respond(mobile) {
+      width: 32.7rem;
+    }
+  }
+
+  &__body {
+    width: 54rem;
+    color: $color-gray;
+    margin: 0 auto;
+
+    @include respond(tablet-portrait) {
+      width: 57.3rem;
+    }
+
+    @include respond(mobile) {
+      width: 32.7rem;
+    }
+  }
+}
